@@ -1,0 +1,7 @@
+---
+- hosts all
+  remote_user root
+ 
+- tasks
+  name: first try
+  command: echo iha
