@@ -1,7 +1,8 @@
----
-- hosts 193.218.104.132
-  remote_user root
- 
-- tasks
-  name: first try
-  command: echo iha
+- hosts: all
+  remote_user: root
+#¼  tasks:
+ #¼ - name: first try
+  #¼action: echo iha
+  roles:
+  - role: test
+
