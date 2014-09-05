@@ -1,0 +1,7 @@
+- name: apachestarter
+#  command: chkconfig --level 35 httpd on
+  service: name=httpd state=started enabled=on
+  notify: apachestopper
+
+- name: apachestopper
+  command: /etc/init.d/httpd stop

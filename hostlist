@@ -1,5 +1,4 @@
----
-#[isenscsi:children]
-#test
-[test]
-193.218.104.132
+#[test]
+#193.218.104.132
+
+test ansible_ssh_port=22 ansible_ssh_host=193.218.104.132

@@ -1,8 +1,6 @@
 - hosts: all
   remote_user: root
-#¼  tasks:
- #¼ - name: first try
-  #¼action: echo iha
-  roles:
-  - role: test
 
+  roles:
+  - role: base
+  - role: apache
